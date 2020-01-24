@@ -1,0 +1,6 @@
+npm init
+npm i --save express mongoose body-parser bcryptjs cors
+node app.js
+
+npm i --save jsonwebtoken passport passport-local lodash
+
