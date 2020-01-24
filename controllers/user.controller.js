@@ -9,7 +9,7 @@ module.exports.register = (req, res, next) => {
     user.fullName = req.body.fullName;
     user.email = req.body.email;
     user.password = req.body.password;
-    user.save((err, doc) => {
+    user.save((err, doc) => {  
         if (!err)
             res.send(doc);
         else {
@@ -43,4 +43,4 @@ module.exports.userProfile = (req, res, next) =>{
                 return res.status(200).json({ status: true, user : _.pick(user,['fullName','email']) });
         }
     );
-}
+}    
